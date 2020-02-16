@@ -35,6 +35,7 @@
 		B89796B023C23EC70040ED99 /* Pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		B89796B123C23EC70040ED99 /* MyPizzasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPizzasViewController.swift; sourceTree = "<group>"; };
 		B89796B823C240530040ED99 /* DDCoordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DDCoordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8AD1E3C23F9AB0E00627400 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B8CA861F23C258EC005AD774 /* MyPizzasCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPizzasCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +88,7 @@
 				B897969223C23E4F0040ED99 /* Assets.xcassets */,
 				B897969423C23E4F0040ED99 /* LaunchScreen.storyboard */,
 				B897969723C23E4F0040ED99 /* Info.plist */,
+				B8AD1E3C23F9AB0E00627400 /* README.md */,
 			);
 			path = Pizzr;
 			sourceTree = "<group>";
