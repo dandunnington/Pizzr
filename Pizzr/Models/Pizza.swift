@@ -1,6 +1,6 @@
 //
 //  Pizza.swift
-//  DDCoordinatorsExampleApp
+//  Pizzr
 //
 //  Created by Dan Dunnington on 05/01/2020.
 //  Copyright © 2020 Dan Dunnington. All rights reserved.

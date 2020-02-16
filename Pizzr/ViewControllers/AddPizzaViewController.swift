@@ -1,6 +1,6 @@
 //
 //  AddPizzaViewController.swift
-//  DDCoordinatorsExampleApp
+//  Pizzr
 //
 //  Created by Dan Dunnington on 26/01/2020.
 //  Copyright © 2020 Dan Dunnington. All rights reserved.
@@ -113,6 +113,10 @@ class AddPizzaViewController: ViewModelledViewController<AddPizzaViewModel> {
     }
     
     private let cellIdentifier = "cell"
+    
+    deinit {
+        print("Deinit on \(AddPizzaViewController.self)")
+    }
 }
 
 extension AddPizzaViewController: UIPickerViewDelegate, UIPickerViewDataSource {

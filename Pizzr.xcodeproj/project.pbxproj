@@ -26,7 +26,7 @@
 		B87EC45423DDEE620066AEC0 /* AddPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPizzaViewController.swift; sourceTree = "<group>"; };
 		B87EC45623DDF7C30066AEC0 /* AddPizzaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPizzaCoordinator.swift; sourceTree = "<group>"; };
 		B88BE18623CB80BD006433ED /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		B897968623C23E4E0040ED99 /* DDCoordinatorsExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDCoordinatorsExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B897968623C23E4E0040ED99 /* Pizzr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pizzr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B897968923C23E4E0040ED99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B897969223C23E4F0040ED99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B897969523C23E4F0040ED99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		B897967D23C23E4E0040ED99 = {
 			isa = PBXGroup;
 			children = (
-				B897968823C23E4E0040ED99 /* DDCoordinatorsExampleApp */,
+				B897968823C23E4E0040ED99 /* Pizzr */,
 				B897968723C23E4E0040ED99 /* Products */,
 				B89796B723C240530040ED99 /* Frameworks */,
 			);
@@ -71,12 +71,12 @@
 		B897968723C23E4E0040ED99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B897968623C23E4E0040ED99 /* DDCoordinatorsExampleApp.app */,
+				B897968623C23E4E0040ED99 /* Pizzr.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B897968823C23E4E0040ED99 /* DDCoordinatorsExampleApp */ = {
+		B897968823C23E4E0040ED99 /* Pizzr */ = {
 			isa = PBXGroup;
 			children = (
 				B87EC45123DDE7790066AEC0 /* ViewModels */,
@@ -88,7 +88,7 @@
 				B897969423C23E4F0040ED99 /* LaunchScreen.storyboard */,
 				B897969723C23E4F0040ED99 /* Info.plist */,
 			);
-			path = DDCoordinatorsExampleApp;
+			path = Pizzr;
 			sourceTree = "<group>";
 		};
 		B89796AF23C23EC70040ED99 /* Models */ = {
@@ -129,9 +129,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B897968523C23E4E0040ED99 /* DDCoordinatorsExampleApp */ = {
+		B897968523C23E4E0040ED99 /* Pizzr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B897969A23C23E4F0040ED99 /* Build configuration list for PBXNativeTarget "DDCoordinatorsExampleApp" */;
+			buildConfigurationList = B897969A23C23E4F0040ED99 /* Build configuration list for PBXNativeTarget "Pizzr" */;
 			buildPhases = (
 				B897968223C23E4E0040ED99 /* Sources */,
 				B897968323C23E4E0040ED99 /* Frameworks */,
@@ -141,9 +141,9 @@
 			);
 			dependencies = (
 			);
-			name = DDCoordinatorsExampleApp;
+			name = Pizzr;
 			productName = DDCoordinatorsExampleApp;
-			productReference = B897968623C23E4E0040ED99 /* DDCoordinatorsExampleApp.app */;
+			productReference = B897968623C23E4E0040ED99 /* Pizzr.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -161,7 +161,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B897968123C23E4E0040ED99 /* Build configuration list for PBXProject "DDCoordinatorsExampleApp" */;
+			buildConfigurationList = B897968123C23E4E0040ED99 /* Build configuration list for PBXProject "Pizzr" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -174,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B897968523C23E4E0040ED99 /* DDCoordinatorsExampleApp */,
+				B897968523C23E4E0040ED99 /* Pizzr */,
 			);
 		};
 /* End PBXProject section */
@@ -341,14 +341,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R3CWC2G9E9;
-				INFOPLIST_FILE = DDCoordinatorsExampleApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pizzr/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dandunnington.DDCoordinatorsExampleApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dandunnington.Pizzr;
+				PRODUCT_NAME = Pizzr;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -359,14 +361,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R3CWC2G9E9;
-				INFOPLIST_FILE = DDCoordinatorsExampleApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pizzr/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dandunnington.DDCoordinatorsExampleApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dandunnington.Pizzr;
+				PRODUCT_NAME = Pizzr;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -375,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B897968123C23E4E0040ED99 /* Build configuration list for PBXProject "DDCoordinatorsExampleApp" */ = {
+		B897968123C23E4E0040ED99 /* Build configuration list for PBXProject "Pizzr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B897969823C23E4F0040ED99 /* Debug */,
@@ -384,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B897969A23C23E4F0040ED99 /* Build configuration list for PBXNativeTarget "DDCoordinatorsExampleApp" */ = {
+		B897969A23C23E4F0040ED99 /* Build configuration list for PBXNativeTarget "Pizzr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B897969B23C23E4F0040ED99 /* Debug */,

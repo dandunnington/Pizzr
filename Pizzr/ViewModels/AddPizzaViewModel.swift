@@ -1,6 +1,6 @@
 //
 //  AddPizzaViewModel.swift
-//  DDCoordinatorsExampleApp
+//  Pizzr
 //
 //  Created by Dan Dunnington on 26/01/2020.
 //  Copyright © 2020 Dan Dunnington. All rights reserved.
@@ -20,6 +20,11 @@ class AddPizzaViewModel: BaseViewModel {
     private var selectedCheeseIndex: Int = 0
     
     private var selectedToppingIndexes: [Int] = []
+    
+    // MARK: - Overrides
+    override var navTitle: String? {
+        return "New Pizza"
+    }
     
     // MARK: - Computed Properties
     private var selectedCheese: Cheese {

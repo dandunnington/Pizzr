@@ -1,6 +1,6 @@
 //
 //  MyPizzasViewController.swift
-//  DDCoordinatorsExampleApp
+//  Pizzr
 //
 //  Created by Dan Dunnington on 05/01/2020.
 //  Copyright © 2020 Dan Dunnington. All rights reserved.
@@ -60,6 +60,10 @@ class MyPizzasViewController: ViewModelledViewController<MyPizzasViewModel> {
     
     // MARK: - Private Interface
     private let cellIdentifier = "cell"
+    
+    deinit {
+        print("Deinitialising \(MyPizzasViewController.self)")
+    }
 }
 
 extension MyPizzasViewController: UITableViewDataSource {
@@ -76,7 +80,6 @@ extension MyPizzasViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfRows
     }
-    
 }
 
 extension MyPizzasViewController {
