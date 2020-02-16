@@ -17,9 +17,24 @@
 		B89796B323C23EC70040ED99 /* MyPizzasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89796AE23C23EC70040ED99 /* MyPizzasViewModel.swift */; };
 		B89796B423C23EC70040ED99 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89796B023C23EC70040ED99 /* Pizza.swift */; };
 		B89796B523C23EC70040ED99 /* MyPizzasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89796B123C23EC70040ED99 /* MyPizzasViewController.swift */; };
-		B89796B923C240530040ED99 /* DDCoordinators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89796B823C240530040ED99 /* DDCoordinators.framework */; };
+		B8AD1E3E23F9BA7900627400 /* LittleJohn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AD1E3D23F9BA7900627400 /* LittleJohn.framework */; };
+		B8AD1E3F23F9BA7900627400 /* LittleJohn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8AD1E3D23F9BA7900627400 /* LittleJohn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B8CA862023C258EC005AD774 /* MyPizzasCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA861F23C258EC005AD774 /* MyPizzasCoordinator.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8AD1E4023F9BA7900627400 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B8AD1E3F23F9BA7900627400 /* LittleJohn.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B87EC45223DDE78D0066AEC0 /* AddPizzaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPizzaViewModel.swift; sourceTree = "<group>"; };
@@ -36,6 +51,7 @@
 		B89796B123C23EC70040ED99 /* MyPizzasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPizzasViewController.swift; sourceTree = "<group>"; };
 		B89796B823C240530040ED99 /* DDCoordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DDCoordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AD1E3C23F9AB0E00627400 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B8AD1E3D23F9BA7900627400 /* LittleJohn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LittleJohn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CA861F23C258EC005AD774 /* MyPizzasCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPizzasCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89796B923C240530040ED99 /* DDCoordinators.framework in Frameworks */,
+				B8AD1E3E23F9BA7900627400 /* LittleJohn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +129,7 @@
 		B89796B723C240530040ED99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B8AD1E3D23F9BA7900627400 /* LittleJohn.framework */,
 				B89796B823C240530040ED99 /* DDCoordinators.framework */,
 			);
 			name = Frameworks;
@@ -138,6 +155,7 @@
 				B897968223C23E4E0040ED99 /* Sources */,
 				B897968323C23E4E0040ED99 /* Frameworks */,
 				B897968423C23E4E0040ED99 /* Resources */,
+				B8AD1E4023F9BA7900627400 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

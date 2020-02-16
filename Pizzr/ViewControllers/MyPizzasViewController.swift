@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import DDCoordinators
+import LittleJohn
 import UIKit
 
 class MyPizzasViewController: ViewModelledViewController<MyPizzasViewModel> {

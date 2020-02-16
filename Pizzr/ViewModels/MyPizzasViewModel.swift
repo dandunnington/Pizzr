@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import DDCoordinators
+import LittleJohn
 
 class MyPizzasViewModel: BaseViewModel {
     

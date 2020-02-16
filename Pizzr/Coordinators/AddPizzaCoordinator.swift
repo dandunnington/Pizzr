@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import DDCoordinators
+import LittleJohn
 import UIKit
 
 class AddPizzaCoordinator: ViewControllerCoordinator<Pizza> {

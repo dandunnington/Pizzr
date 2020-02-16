@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import DDCoordinators
+import LittleJohn
 
 class AddPizzaViewController: ViewModelledViewController<AddPizzaViewModel> {
     
