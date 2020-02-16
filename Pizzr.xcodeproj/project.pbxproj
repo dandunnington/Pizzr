@@ -63,6 +63,7 @@
 		B897967D23C23E4E0040ED99 = {
 			isa = PBXGroup;
 			children = (
+				B8AD1E3C23F9AB0E00627400 /* README.md */,
 				B897968823C23E4E0040ED99 /* Pizzr */,
 				B897968723C23E4E0040ED99 /* Products */,
 				B89796B723C240530040ED99 /* Frameworks */,
@@ -88,7 +89,6 @@
 				B897969223C23E4F0040ED99 /* Assets.xcassets */,
 				B897969423C23E4F0040ED99 /* LaunchScreen.storyboard */,
 				B897969723C23E4F0040ED99 /* Info.plist */,
-				B8AD1E3C23F9AB0E00627400 /* README.md */,
 			);
 			path = Pizzr;
 			sourceTree = "<group>";
