@@ -15,7 +15,7 @@ class AppCoordinator: DelegatingCoordinator<Bool> {
     var window: UIWindow?
     
     override func makeDelegatingCoordinator() -> CoordinatorType {
-        MyPizzasCoordinator(presentingStrategy: .pushFromCoordinator(self))
+        MainTabCoordinator(presentingStrategy: .pushFromCoordinator(self))
     }
     
 }
