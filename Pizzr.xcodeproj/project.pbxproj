@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B87C34C324144BAF00C04C94 /* notification.json in Resources */ = {isa = PBXBuildFile; fileRef = B87C34C224144BAF00C04C94 /* notification.json */; };
 		B87EC45323DDE78D0066AEC0 /* AddPizzaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87EC45223DDE78D0066AEC0 /* AddPizzaViewModel.swift */; };
 		B87EC45523DDEE620066AEC0 /* AddPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87EC45423DDEE620066AEC0 /* AddPizzaViewController.swift */; };
 		B87EC45723DDF7C30066AEC0 /* AddPizzaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87EC45623DDF7C30066AEC0 /* AddPizzaCoordinator.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B87C34C224144BAF00C04C94 /* notification.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = notification.json; sourceTree = "<group>"; };
 		B87EC45223DDE78D0066AEC0 /* AddPizzaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPizzaViewModel.swift; sourceTree = "<group>"; };
 		B87EC45423DDEE620066AEC0 /* AddPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPizzaViewController.swift; sourceTree = "<group>"; };
 		B87EC45623DDF7C30066AEC0 /* AddPizzaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPizzaCoordinator.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				B897969223C23E4F0040ED99 /* Assets.xcassets */,
 				B897969423C23E4F0040ED99 /* LaunchScreen.storyboard */,
 				B897969723C23E4F0040ED99 /* Info.plist */,
+				B87C34C224144BAF00C04C94 /* notification.json */,
 			);
 			path = Pizzr;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B897969623C23E4F0040ED99 /* LaunchScreen.storyboard in Resources */,
+				B87C34C324144BAF00C04C94 /* notification.json in Resources */,
 				B897969323C23E4F0040ED99 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

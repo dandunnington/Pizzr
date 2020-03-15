@@ -1,0 +1,22 @@
+{
+    "coordinatorPath": {
+        "id": "test",
+        "items": [
+            {
+                "id": "addPizza",
+                "present": "present",
+                "presentationStyle": "automatic",
+                "data": { }
+            },
+            {
+                "id": "addPizza",
+                "present": "push",
+                "data": {
+                    "name": "Passed Pizza",
+                    "toppings": ["pepperoni", "peppers"],
+                    "cheese": "stilton"
+                }
+            }
+        ]
+    }
+}

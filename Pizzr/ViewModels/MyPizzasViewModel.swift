@@ -17,6 +17,10 @@ class MyPizzasViewModel: BaseViewModel {
         }
     }
     
+    internal var notificationButtonTitle: String {
+        return "Notification"
+    }
+    
     internal var coordinator: MyPizzaViewModelDelegate
     
     // MARK: - Mutating Methods
@@ -37,6 +41,10 @@ class MyPizzasViewModel: BaseViewModel {
     // MARK: - UI Actions
     internal func addTapped() {
         coordinator.addTapped(self)
+    }
+    
+    internal func notifcationButtonTapped() {
+        coordinator.notificationTapped(self)
     }
     
     // MARK: - UI Events
@@ -79,4 +87,5 @@ class MyPizzasViewModel: BaseViewModel {
 
 protocol MyPizzaViewModelDelegate {
     func addTapped(_ viewModel: MyPizzasViewModel)
+    func notificationTapped(_ viewModel: MyPizzasViewModel)
 }

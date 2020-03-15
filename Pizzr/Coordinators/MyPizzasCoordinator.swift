@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import LittleJohn
 
-class MyPizzasCoordinator: ViewModelledViewControllerCoordinator<Bool, MyPizzasViewModel> {
+final class MyPizzasCoordinator: ViewModelledViewControllerCoordinator<Bool, MyPizzasViewModel> {
     
     // MARK: - Overrides
     override func makeViewModelledViewController() -> ViewModelledViewController<MyPizzasViewModel> {
@@ -28,4 +28,13 @@ extension MyPizzasCoordinator: MyPizzaViewModelDelegate {
             cancelled: nil
         ))
     }
+    
+    func notificationTapped(_ viewModel: MyPizzasViewModel) {
+        // Fires internal notification for demo purposes - Not framework reccomended!
+        NotificationCenter.default.post(Notification(name: .simulateNotification))
+    }
+}
+
+protocol MyPizzasCoordinatorDelegate {
+    func myPizzaCoordinatorDidTapNotification(_ coordinator: MyPizzasCoordinator)
 }

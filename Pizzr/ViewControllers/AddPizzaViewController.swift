@@ -93,6 +93,18 @@ class AddPizzaViewController: ViewModelledViewController<AddPizzaViewModel> {
         ])
         
         nameField.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        
+        viewModel.updateUI = { [unowned self] in
+            self.nameField.text = self.viewModel.name
+            self.cheesePicker.selectRow(self.viewModel.selectedCheeseIndex, inComponent: 0, animated: false)
+            for index in (0...self.viewModel.numberOfItemsInTopping) {
+                if self.viewModel.selectedToppingIndexes.contains(index) {
+                    self.toppingsTableView.selectRow(at: IndexPath(row: index, section: 0), animated: false, scrollPosition: .none)
+                } else {
+                    self.toppingsTableView.deselectRow(at: IndexPath(row: index, section: 0), animated: false)
+                }
+            }
+        }
     }
     
     override var navigationItem: UINavigationItem {

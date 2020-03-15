@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct Pizza {
+struct Pizza: Decodable {
     var name: String
     var toppings: [PizzaTopping]
     var cheese: Cheese
 }
 
-enum PizzaTopping: String, CaseIterable {
+enum PizzaTopping: String, Decodable, CaseIterable {
     
     case pepperoni
     case peppers
@@ -26,7 +26,7 @@ enum PizzaTopping: String, CaseIterable {
     }
 }
 
-enum Cheese: String, CaseIterable {
+enum Cheese: String, Decodable, CaseIterable {
     
     case cheddar
     case mozzarella

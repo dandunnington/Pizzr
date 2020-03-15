@@ -11,15 +11,17 @@ import LittleJohn
 
 class AddPizzaViewModel: BaseViewModel {
 
-    private var name: String?
+    // MARK: - UI Readable Properties
+    internal private(set) var name: String?
     
+    internal private(set) var selectedCheeseIndex: Int = 0
+    
+    internal private(set) var selectedToppingIndexes: [Int] = []
+    
+    // MARK: - All Option Arrays
     private let cheeseOptions: [Cheese] = Cheese.allCases
     
     private let toppingsOptions: [PizzaTopping] = PizzaTopping.allCases
-    
-    private var selectedCheeseIndex: Int = 0
-    
-    private var selectedToppingIndexes: [Int] = []
     
     // MARK: - Overrides
     override var navTitle: String? {
@@ -40,6 +42,12 @@ class AddPizzaViewModel: BaseViewModel {
     
     // MARK: - UI Events
     internal var didOutputInvalidSave: ((InvalidState) -> Void)?
+    
+    internal var updateUI: (() -> Void)? {
+        didSet {
+            updateUI?()
+        }
+    }
     
     // MARK: - UI Actions
     internal func textChangedOnNameField(to string: String?) {
@@ -102,8 +110,16 @@ class AddPizzaViewModel: BaseViewModel {
     }
     
     // MARK: - Initialisers
-    init(coordinator: AddPizzaViewModelDelegate) {
+    init(coordinator: AddPizzaViewModelDelegate, pizza: Pizza? = nil) {
         self.coordinator = coordinator
+        super.init()
+        guard let pizza = pizza else { return }
+        name = pizza.name
+        selectedCheeseIndex = cheeseOptions.firstIndex(of: pizza.cheese) ?? 0
+        selectedToppingIndexes = pizza.toppings.compactMap {
+            self.toppingsOptions.firstIndex(of: $0)
+        }
+        
     }
     
     // MARK: - Supporting Structures

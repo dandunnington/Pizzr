@@ -42,6 +42,12 @@ class MyPizzasViewController: ViewModelledViewController<MyPizzasViewModel> {
     override var navigationItem: UINavigationItem {
         let navItem = super.navigationItem
         navItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
+        navItem.leftBarButtonItem = UIBarButtonItem(
+            title: viewModel.notificationButtonTitle,
+            style: .done,
+            target: self,
+            action: #selector(notificationTapped)
+        )
         return navItem
     }
     
@@ -56,6 +62,10 @@ class MyPizzasViewController: ViewModelledViewController<MyPizzasViewModel> {
     // MARK: - UI Actions
     @objc private func addTapped() {
         viewModel.addTapped()
+    }
+    
+    @objc private func notificationTapped() {
+        viewModel.notifcationButtonTapped()
     }
     
     // MARK: - Private Interface
